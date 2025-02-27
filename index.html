@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xurst's template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="services-container">
+        <!-- Supported Services Header -->
+        <header class="services-container__header">
+          <h2 class="services-container__title">supported services</h2>
+          <button class="services-container__toggle">
+            <i class="fas fa-plus"></i>
+          </button>
+        </header>
+        <!-- Custom dropdown (initially hidden) -->
+        <div class="services-container__dropdown hidden">
+          <ul class="services-container__list">
+            <li class="services-container__item">
+              <i class="fab fa-instagram"></i> instagram
+            </li>
+            <li class="services-container__item">
+              <i class="fab fa-youtube"></i> youtube
+            </li>
+            <li class="services-container__item">
+              <i class="fab fa-tiktok"></i> tiktok
+            </li>
+          </ul>
+          <p class="services-container__note">
+            simple reposter is not affiliated with any of the services listed above.
+          </p>
+        </div>
+        <!-- File Upload Section -->
+        <div class="upload-section">
+          <button class="upload-section__button" id="uploadButton">
+            <i class="upload-section__icon fas fa-file-upload"></i>
+            <span class="upload-section__text">click or drag and drop a video</span>
+          </button>
+          <!-- Hidden file input for explorer trigger -->
+          <input type="file" id="fileInput" class="hidden" accept="video/*" />
+          <!-- Status text (hidden until a file is dropped/selected) -->
+          <p class="upload-section__status hidden">pasted!</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Existing scripts and new functionality -->
+    <script type="module" src="src/js/notificationSystem.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="src/js/sidebar.js"></script>
+    <script type="module" src="src/js/scroll_fade.js"></script>
+  </body>
+</html>
