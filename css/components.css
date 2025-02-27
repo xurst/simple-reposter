@@ -1,0 +1,139 @@
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+
+/* Services Container */
+.services-container {
+  /* Remove extra top margin and shadow, place at top */
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 600px;
+  background: transparent;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* Header */
+.services-container__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0; /* remove bottom margin */
+  padding: 0;
+}
+
+.services-container__title {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.services-container__toggle {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 0.5rem;
+  padding: 0;
+}
+
+.services-container__toggle:focus {
+  outline: none;
+}
+
+/* Dropdown for Supported Services */
+.services-container__dropdown {
+  display: none;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.services-container--open .services-container__dropdown {
+  display: block; /* show when container has this class */
+}
+
+.services-container__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-container__item {
+  background: #333;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.services-container__item i {
+  margin-right: 0.5rem;
+}
+
+/* Note under dropdown */
+.services-container__note {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+}
+
+/* Center Upload Section */
+.upload-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure full height for proper centering */
+  width: 100%; /* Take full width */
+}
+
+.upload-section__button {
+  background: #1919192b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%; /* Makes sure it's responsive */
+  max-width: 250px; /* Prevents it from being too large */
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-section__icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  color: 255, 255, 255, 0.1;
+}
+
+.upload-section__text {
+  font-size: 1.15rem;
+  color: #ffffff80;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+/* Hover/Dragover State */
+.upload-section__button.dragover {
+  background: #0056b3;
+  transform: scale(1.05) rotate(15deg);
+}
+
+.upload-section__button.dragover .upload-section__icon {
+  transform: scale(1.2);
+}
+
+/* Status Message */
+.upload-section__status {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #28a745;
+}

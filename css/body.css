@@ -1,0 +1,121 @@
+/* body.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: "IBM Plex Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  transform: none;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Buttons general */
+button {
+padding: 10px 20px;
+background-color: transparent;
+color: white;
+border: 2px solid #3c3c3c;
+border-radius: 13px;
+cursor: pointer;
+transition: border-color 0.2s ease, transform 0.1s;
+font-size: 14px;
+font-family: "ibm plex mono", monospace;
+}
+
+button:hover {
+border-color: white;
+}
+
+button:active {
+transform: scale(0.98);
+}
+
+/* Responsive Breakpoints */
+
+/* Mobile phone size (esm) */
+@media (width >= 23rem) {
+/* Add styles for sm breakpoint here */
+}
+
+/* Mobile phone landscape (esmL) */
+@media (width >= 50rem) {
+/* Add styles for sm breakpoint here */
+}
+
+/* Tablet size (md) */
+@media (width >= 48rem) {
+/* Add styles for md breakpoint here */
+}
+
+/* Tablet landscape size (mdL) */
+@media (width >= 64rem) {
+/* Add styles for md breakpoint here */
+}
+
+
+/* Extras
+
+/* Small (sm) */
+@media (width >= 40rem) {
+/* Add styles for sm breakpoint here */
+}
+
+/* Medium (md) */
+@media (width >= 48rem) {
+/* Add styles for md breakpoint here */
+}
+
+/* Large (lg) */
+@media (width >= 64rem) {
+/* Add styles for lg breakpoint here */
+}
+
+/* Extra Large (xl) */
+@media (width >= 80rem) {
+/* Add styles for xl breakpoint here */
+}
+
+/* 2X Large (2xl) */
+@media (width >= 96rem) {
+/* Add styles for 2xl breakpoint here */
+}
