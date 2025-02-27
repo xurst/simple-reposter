@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@import "../css/body.css";
+@import "../css/notifications.css";
+@import "../css/components.css";
+@import "../css/sidebar.css";
+@import "../css/scroll_fade.css";
