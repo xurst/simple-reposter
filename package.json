@@ -1,0 +1,35 @@
+{
+  "name": "simple-reposter",
+  "version": "1.0.0",
+  "description": "a simple reposter for services like insta, youtube, and tiktok.\r u can manage ur posts and stuff so ya.",
+  "main": "main.js",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.9",
+    "braces": "^3.0.3",
+    "detect-libc": "^1.0.3",
+    "enhanced-resolve": "^5.18.1",
+    "fill-range": "^7.1.1",
+    "graceful-fs": "^4.2.11",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "jiti": "^2.4.2",
+    "lightningcss": "^1.29.1",
+    "lightningcss-win32-x64-msvc": "^1.29.1",
+    "micromatch": "^4.0.8",
+    "mri": "^1.2.0",
+    "node-addon-api": "^7.1.1",
+    "picocolors": "^1.1.1",
+    "picomatch": "^2.3.1",
+    "tailwindcss": "^4.0.9",
+    "tapable": "^2.2.1",
+    "to-regex-range": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
